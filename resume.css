@@ -2,7 +2,109 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0;
-    height: 100%;
-    background-color: green;
+    display: flex;
+    justify-content: center;
 }
+.main {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    grid-template-rows: .5fr .3fr .2fr .3fr .2fr 1fr .2fr .5fr;
+    width: 690px;
+    height: 690pt; 
+    gap: .2em;
+    color: rgb(230, 230, 230);
+    padding: 20px;
+    background-color: rgb(83, 46, 28);
+}
+.main > div:nth-child(2) {
+    font-size:x-large;
+    align-self: center;
+    color: rgb(230, 230, 230);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Righteous', cursive;
+    padding-left: 20pt;
+    border-style: none none solid none;
+    padding: 2px;
+}
+.main > div:nth-child(1) {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.main > div:nth-child(3) p {
+    margin: 0;
+}
+.main > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* align-self: center;
+    justify-self: center; */
+}
+.main > div:nth-child(4) {
+    align-self: center;
+    justify-self: center;
+}
+.main > div:nth-child(6) {
+    letter-spacing: .2em;
+    align-self: start; 
+    justify-self: start;
+    border-style: none none solid none;
+    border-width: .1em;
+    padding: 2px;
+}
+.main > div:nth-child(7) {
+    align-self: start;
+    justify-self: center;    
+}
+.main > div:nth-child(8) {
+    letter-spacing: .2em;
+    align-self: start;
+    justify-self: start;
+    border-style: none none solid none;
+    border-width: .1em;
+}
+.main > div:nth-child(9) {
+    align-self: start;
+    justify-self: start;
+}
+.main > div:nth-child(10) {
+    letter-spacing: .2em;
+    align-self: start;
+    justify-self: start;
+    border-style: none none solid none;
+    border-width: .1em;
+}
+.main > div:nth-child(11) {
+    background-color:;
+    align-self: start;
+    justify-self: start;
+}
+
+.main > div:nth-child(5) {
+    background-color: rgb(2, 2, 2);
+    border-radius: 25px;
+    margin-right: 20px;
+    grid-column: span 1/2;
+    grid-row: span 6/9;
+    color: rgb(230, 230, 230);
+}
+.stretch {
+    display: grid;
+}
+.stretch > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.stretch > div > p {
+    margin: 0px;
+}
+.main > div > ul {
+    padding-inline-start: 0px;
+}
+img {
+    border-radius: 10%;
+  }
