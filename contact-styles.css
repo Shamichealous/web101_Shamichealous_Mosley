@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+.grid-container > section {
+    border: black solid 2px;
+    text-align: center;
+    padding: 50px;
+    min-width: 500px;
+    width: 650px;
+    justify-content: center;
+    align-content: center
+}
+.center1 form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.center1 textarea {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    width: 400px;
+    min-height: 200px;
+    text-align: center;
+}
+.center1 input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+}
+/* .maintext {
+    margin-bottom: 20px;
+} */
+.center2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;   
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 20px; */
+}
+.center2 input {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 400px; */
+    text-align: center;
+}
+.firstform {
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+    /* row-gap: 20px; */
+}
+h1:hover {
+    transform: scale(2);
+    transition: ease-in-out 200ms;
+}
+ 
+
+@media (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .grid-container > section {
+        border: black solid 2px;
+        text-align: center;
+        padding: 50px;
+        min-width: 300px;
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    form input {
+        max-width: 75%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    form {
+        width: 100%;
+    }
+    textarea {
+        max-width: 75%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .firstform {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        row-gap: 20px;
+    }
+    .secondform {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+    }
+}
